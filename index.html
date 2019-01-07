@@ -1,0 +1,96 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Content/bootstrap.css" rel="stylesheet" />
+    <script src="Scripts/jquery-3.0.0.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+    <script src="Scripts/popper.min.js"></script>
+    <title></title>
+</head>
+<body>
+    <!-- Jumbotron-->
+    <div class="jumbotron bg-info text-white font-italic border border-primary align-content-center">
+        <h2 class="display-4">Stéphane Pouwels</h2>
+        <p class="lead text-warning">Cv Numérique</p>
+        <img src="assets\owl.jpg" class="img-fluid" style="width:70px;" alt="owl">
+        <hr class="my-4 bg-warning">
+        <p>Informatique & Développement.</p>
+        <!-- Button to Open the Modal -->
+        <button type="button" class="btn btn-outline-light bg-secondary font-italic text-light" data-toggle="modal" data-target="#myModal">Plus d'informations...</button>
+    </div>
+    <!-- The Modal -->
+    <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialoge-center modal-lg">
+            <div class="modal-content">
+                <!-- Modal Header -->
+                <div class="modal-header bg-dark text-center text-light font-weight-bold font-italic">
+                    <h4 class="modal-title">CV Numérique</h4>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                </div>
+                <!-- Modal body -->
+                <div class="modal-body bg-warning">
+                    <button type="button" class="button bg-primary text-light font-italic" data-toggle="collapse" data-target="#coll1">
+                        <img src="assets\people.jpg" class="img-fluid" alt="people">
+                        <p>1. A Propos</p>
+                    </button>
+                    <div id="coll1" class="collapse bg-primary text-light font-italic">
+                        <!-- A Propos -->
+                        <p>34 Rue des Peupliers</p>
+                        <p>76 600 Le Havre</p>
+                    </div>
+                    <button type="button" class="button bg-secondary text-light font-italic" data-toggle="collapse" data-target="#coll2">
+                        <img src="assets\tech.jpg" class="img-fluid" alt="tech">
+                        <p>2. Mon Parcours</p>
+                    </button>
+                    <div id="coll2" class="collapse bg-secondary text-light font-italic">
+                        <!-- Mon Parcours -->
+                        <p>Expérience Professionnelle</p>
+                        <p>Etudes • Compétences & Centres d’Intérêts</p>
+                    </div>
+                    <button type="button" class="button bg-success text-light font-italic" data-toggle="collapse" data-target="#coll3">
+                        <img src="assets\contact.jpg" class="img-fluid" alt="contact">
+                        <p>3. Contact</p>
+                    </button>
+                    <div id="coll3" class="collapse bg-success text-light font-italic">
+                        <!-- Contact -->
+                        <p>Tel : 06 .. .. .. ..</p>
+                        <p>Email: monsieur@gmail.com</p>
+                    </div>
+                </div>
+                <!-- Modal footer -->
+                <div class="modal-footer bg-secondary">
+                    <!-- Navbar -->
+                    <nav class="navbar navbar-expand-md bg-dark navbar-dark">
+                        <!-- Brand -->
+                        <a class="navbar-brand" href="#">Logo</a>
+                        <img src="assets/perso.jpg" alt="Logo" style="width:40px;">
+                        <!-- Toggler/collapsibe Button -->
+                        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+                            <span class="navbar-toggler-icon"></span>
+                        </button>
+                        <!-- Navbar links -->
+                        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                            <ul class="navbar-nav">
+                                <li class="nav-item dropdown">
+                                    <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                        Liens Vers :
+                                    </a>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" data-toggle="collapse" data-target="#coll1">A Propos</a>
+                                        <a class="dropdown-item" data-toggle="collapse" data-target="#coll2">Mon Parcours</a>
+                                        <a class="dropdown-item" data-toggle="collapse" data-target="#coll3">Contact</a>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                    </nav>
+                    <!-- Fin de la Navbar -->
+                    <button type="button" class="btn btn-info" data-dismiss="modal">Retour</button>
+                </div>
+            </div>
+        </div>
+    </div>
+ </body>
+</html>
