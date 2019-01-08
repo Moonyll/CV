@@ -7,56 +7,59 @@
     <script src="Scripts/jquery-3.0.0.min.js"></script>
     <script src="Scripts/bootstrap.min.js"></script>
     <script src="Scripts/popper.min.js"></script>
-    <title></title>
+    <title>TP CV Numérique</title>
+    <style>
+        .jumbotron {font-family: Time New Roman ;font-weight:bold}
+        .modal {font-family: Time New Roman}
+    </style>
 </head>
 <body>
     <!-- Jumbotron-->
-    <div class="jumbotron bg-info text-white font-italic border border-primary align-content-center">
+    <div class="jumbotron bg-info text-white border border-primary align-content-center">
         <h2 class="display-4">Stéphane Pouwels</h2>
         <p class="lead text-warning">Cv Numérique</p>
         <img src="assets\owl.jpg" class="img-fluid" style="width:70px;" alt="owl">
         <hr class="my-4 bg-warning">
         <p>Informatique & Développement.</p>
         <!-- Button to Open the Modal -->
-        <button type="button" class="btn btn-outline-light bg-secondary font-italic text-light" data-toggle="modal" data-target="#myModal">Plus d'informations...</button>
+        <button type="button" class="btn btn-outline-light bg-secondary text-light" data-toggle="modal" data-target="#myModal">Plus d'informations...</button>
     </div>
     <!-- The Modal -->
     <div class="modal fade" id="myModal">
         <div class="modal-dialog modal-dialoge-center modal-lg">
             <div class="modal-content">
                 <!-- Modal Header -->
-                <div class="modal-header bg-dark text-center text-light font-weight-bold font-italic">
+                <div class="modal-header bg-dark text-center text-light font-weight-bold">
                     <h4 class="modal-title">CV Numérique</h4>
                     <button type="button" class="close" data-dismiss="modal">&times;</button>
                 </div>
                 <!-- Modal body -->
-                <div class="modal-body bg-warning">
-                    <button type="button" class="button bg-primary text-light font-italic" data-toggle="collapse" data-target="#coll1">
+                <div class="modal-body bg-transparent">
+                    <button type="button" class="button bg-primary text-light" data-toggle="collapse" data-target="#coll1">
                         <img src="assets\people.jpg" class="img-fluid" alt="people">
                         <p>1. A Propos</p>
                     </button>
-                    <div id="coll1" class="collapse bg-primary text-light font-italic">
+                    <div id="coll1" class="collapse bg-transparent text-center text-dark border border-primary">
                         <!-- A Propos -->
-                        <p>34 Rue des Peupliers</p>
-                        <p>76 600 Le Havre</p>
+                        <p>Actuellement en formation à la Manu - Le Havre.</p>
+                        <p>Formation en développement web.</p>
+                        <p>Projet professionnel : Perfectionnement en informatique, création de projets web.</p>
                     </div>
-                    <button type="button" class="button bg-secondary text-light font-italic" data-toggle="collapse" data-target="#coll2">
+                    <button type="button" class="button bg-secondary text-light" data-toggle="collapse" data-target="#coll2">
                         <img src="assets\tech.jpg" class="img-fluid" alt="tech">
                         <p>2. Mon Parcours</p>
                     </button>
-                    <div id="coll2" class="collapse bg-secondary text-light font-italic">
+                    <div id="coll2" class="collapse bg-secondary text-light">
                         <!-- Mon Parcours -->
-                        <p>Expérience Professionnelle</p>
-                        <p>Etudes • Compétences & Centres d’Intérêts</p>
+                        <img src="assets\parcours.png" class="img-fluid border border-secondary" alt="parcours">
                     </div>
-                    <button type="button" class="button bg-success text-light font-italic" data-toggle="collapse" data-target="#coll3">
+                    <button type="button" class="button bg-success text-light" data-toggle="collapse" data-target="#coll3">
                         <img src="assets\contact.jpg" class="img-fluid" alt="contact">
                         <p>3. Contact</p>
                     </button>
-                    <div id="coll3" class="collapse bg-success text-light font-italic">
+                    <div id="coll3" class="collapse bg-success text-light">
                         <!-- Contact -->
-                        <p>Tel : 06 .. .. .. ..</p>
-                        <p>Email: monsieur@gmail.com</p>
+                        <img src="assets\coord.png" class="img-fluid border border bg-success" alt="coordonnées">
                     </div>
                 </div>
                 <!-- Modal footer -->
